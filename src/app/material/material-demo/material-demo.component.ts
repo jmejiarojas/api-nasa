@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-material-demo',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialDemoComponent implements OnInit {
 
-  constructor() { }
+  name: string;
+
+  constructor() {
+    this.name = "Julio Mejia";
+  }
 
   ngOnInit() {
   }
