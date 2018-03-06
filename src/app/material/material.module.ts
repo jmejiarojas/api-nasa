@@ -1,12 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
 //Modules Material
-import { MatToolbarModule, MatButtonModule, MatIconModule, MatExpansionModule } from '@angular/material';
+import {
+  MatToolbarModule,
+  MatButtonModule,
+  MatIconModule,
+  MatExpansionModule,
+  MatInputModule,
+  MatListModule
+}
+  from '@angular/material';
 
 //Component
-import { MaterialDemoComponent } from './material-demo/material-demo.component';
-import { MaterialButtonComponent } from './material-button/material-button.component';
+import {MaterialDemoComponent} from './material-demo/material-demo.component';
+import {MaterialButtonComponent} from './material-button/material-button.component';
+import {MaterialInputComponent} from './material-input/material-input.component';
+import { MaterialListComponent } from './material-list/material-list.component';
 
 
 @NgModule({
@@ -15,14 +25,18 @@ import { MaterialButtonComponent } from './material-button/material-button.compo
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatInputModule,
+    MatListModule
   ],
   exports: [
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatInputModule,
+    MatListModule
   ],
-  declarations: [MaterialDemoComponent, MaterialButtonComponent]
+  declarations: [MaterialDemoComponent, MaterialButtonComponent, MaterialInputComponent, MaterialListComponent]
 })
-export class MaterialModule { }
+export class MaterialModule {}

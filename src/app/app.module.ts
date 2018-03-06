@@ -13,7 +13,6 @@ import { MaterialModule } from './material/material.module';
 //Routing
 import { AppRoutingModule } from './app-routing.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
