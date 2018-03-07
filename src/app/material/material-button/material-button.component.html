@@ -1,7 +1,7 @@
 <h3>Botones Simples</h3>
 <div>
-	<button mat-button color="primary">Boton Primario</button>
-	<button mat-button>Boton Basico</button>
+	<button mat-button color="primary" [disabled]="!formulario.valido">Boton Primario</button>
+	<button mat-button [disabled]="!formulario.valido">Boton Basico</button>
 </div>
 
 <h3>Botones con elevacion</h3>

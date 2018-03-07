@@ -1,18 +1,21 @@
 <h3>Listas básicas</h3>
 <mat-list>
   <mat-list-item>
-    <img mat-line mat-list-avatar src="https://www.shareicon.net/data/128x128/2015/09/20/104335_avatar_512x512.png" alt="">
-    <span mat-line>Luis Aviles</span>
-    <span mat-line>Lima</span>
+    <img *ngIf="estudiante1.fotoUrl" mat-line mat-list-avatar [src]="estudiante1.fotoUrl" alt="">
+    <!--<img *ngIf="!estudiante1.fotoUrl" mat-line mat-list-avatar [src]="DEFAULT_PHOTO" alt="">-->
+    <span mat-line>{{ estudiante1.nombre }}</span>
+    <span mat-line> {{ estudiante1.ciudad }} </span>
   </mat-list-item>
   <mat-list-item>
-    <img mat-line mat-list-avatar src="https://www.shareicon.net/data/128x128/2015/09/20/104335_avatar_512x512.png" alt="">
-    <span mat-line>Jose Luis Mejia</span>
-    <span mat-line>Mexico</span>
+    <img *ngIf="estudiante2.fotoUrl" mat-line mat-list-avatar [src]="estudiante2.fotoUrl" alt="">
+    <img *ngIf="!estudiante2.fotoUrl" mat-line mat-list-avatar [src]="DEFAULT_PHOTO" alt="">
+    <span mat-line>{{ estudiante2.nombre }}</span>
+    <span mat-line>{{ estudiante2.ciudad }}</span>
   </mat-list-item>
   <mat-list-item>
-    <img mat-line mat-list-avatar src="https://www.shareicon.net/data/128x128/2015/09/20/104335_avatar_512x512.png" alt="">
-    <span mat-line>Jorge Aldunate</span>
-    <span mat-line>Bogota</span>
+    <img *ngIf="estudiante3.fotoUrl" mat-line mat-list-avatar [src]="estudiante3.fotoUrl" alt="">
+    <img *ngIf="!estudiante3.fotoUrl" mat-line mat-list-avatar [src]="DEFAULT_PHOTO" alt="">
+    <span mat-line>{{ estudiante3.nombre }}</span>
+    <span mat-line>{{ estudiante3.ciudad }}</span>
   </mat-list-item>
 </mat-list>
