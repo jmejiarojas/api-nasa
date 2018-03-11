@@ -15,11 +15,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 //Services
 import { NasaApiService } from './shared/services/nasa-api.service';
+import { LowerCasePipe } from './shared/pipes/lower-case.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    LowerCasePipe,
   ],
   imports: [
     BrowserModule,
