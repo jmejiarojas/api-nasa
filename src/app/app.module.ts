@@ -13,6 +13,9 @@ import { MaterialModule } from './material/material.module';
 //Routing
 import { AppRoutingModule } from './app-routing.module';
 
+//Services
+import { NasaApiService } from './shared/services/nasa-api.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [NasaApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

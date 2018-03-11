@@ -1,0 +1,7 @@
+<mat-list-item (click) = "onClick(estudiante)">
+    <img *ngIf="estudiante.fotoUrl" mat-line mat-list-avatar [src]="estudiante.fotoUrl" alt="">
+    <img *ngIf="!estudiante.fotoUrl" mat-line mat-list-avatar [src]="DEFAULT_PHOTO" alt="">
+    <span mat-line>{{ estudiante.nombre }}</span>
+    <span mat-line> {{ estudiante.ciudad }} </span>
+</mat-list-item>
+

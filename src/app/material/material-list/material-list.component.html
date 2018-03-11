@@ -1,9 +1,6 @@
 <h3>Listas básicas</h3>
 <mat-list>
-  <mat-list-item *ngFor="let item of listEstudiantes">
-    <img *ngIf="item.fotoUrl" mat-line mat-list-avatar [src]="item.fotoUrl" alt="">
-    <img *ngIf="!item.fotoUrl" mat-line mat-list-avatar [src]="DEFAULT_PHOTO" alt="">
-    <span mat-line>{{ estudiante1.nombre }}</span>
-    <span mat-line> {{ estudiante1.ciudad }} </span>
-  </mat-list-item>
+  <app-item-estudiante *ngFor="let item of listEstudiantes" 
+  [estudiante]="item" (clickEmitter)="onClick($event)">
+  </app-item-estudiante>
 </mat-list>
