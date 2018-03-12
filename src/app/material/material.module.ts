@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 //Modules Material
 import {
@@ -22,6 +23,7 @@ import { MaterialListComponent } from './material-list/material-list.component';
 import { ItemEstudianteComponent } from './material-list/item-estudiante/item-estudiante.component';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatInputModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule
   ],
   exports: [
     MatToolbarModule,
@@ -42,7 +45,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatInputModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule
   ],
   declarations: [MaterialDemoComponent, MaterialButtonComponent, MaterialInputComponent, MaterialListComponent, ItemEstudianteComponent]
 })
