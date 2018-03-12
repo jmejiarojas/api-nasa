@@ -1,0 +1,10 @@
+.card-content{
+    width: 350px;
+    margin: 16px;
+    box-sizing: border-box;
+}
+
+.card-container{
+    display: flex;
+    flex-flow: row wrap;
+}
