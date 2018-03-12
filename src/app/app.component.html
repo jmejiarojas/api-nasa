@@ -1,10 +1,31 @@
 <mat-toolbar color="primary">
-    <button mat-icon-button>
+    <!-- <button mat-icon-button>
         <mat-icon>menu</mat-icon>
+    </button> -->
+    <span>Mars Rover Photos</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
     </button>
-    <span>Angular desde cero</span>
 </mat-toolbar>
-<nav>
+
+<mat-menu #menu="matMenu" >
+    <a mat-menu-item routerLink="/home">
+        <mat-icon>dialpad</mat-icon>
+        <span>Home</span>
+    </a>
+    <a mat-menu-item routerLink="/material-demo">
+        <mat-icon>voicemail</mat-icon>
+        <span>Material Demo</span>
+    </a>
+    <a mat-menu-item routerLink="/mars">
+        <mat-icon>notifications_off</mat-icon>
+        <span>Mars Image</span>
+    </a>
+</mat-menu>
+
+
+<!-- <nav>
     <a href="" routerLink="/home">
         <button mat-button color="primary">
             Home
@@ -20,5 +41,5 @@
             Mars Images
         </button>
     </a>
-</nav>
+</nav> -->
 <router-outlet></router-outlet>
