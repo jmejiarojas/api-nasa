@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 
 //Modules
 import { MaterialModule } from './material/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 //Routing
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +28,8 @@ import { LowerCasePipe } from './shared/pipes/lower-case.pipe';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [NasaApiService],
   bootstrap: [AppComponent]

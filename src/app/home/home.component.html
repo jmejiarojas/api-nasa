@@ -1,5 +1,5 @@
 <div class="card-container">
-  <mat-card class="card-content">
+  <mat-card class="card-content" *ngIf="apod">
     <h3>Astronomy Picture Of the Day</h3>
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
@@ -18,6 +18,18 @@
     </mat-card-actions>
 
   </mat-card>
+
+  <div class="card-container">
+    <mat-spinner *ngIf="!apod && !error" class="card-content">
+    </mat-spinner>
+  </div>
+
+  <div *ngIf="error">
+    <mat-card>
+      {{ error }}
+    </mat-card>
+  </div>
+  
 
   <!-- <pre>{{ apod | json }}</pre> -->
   <!-- <div>
